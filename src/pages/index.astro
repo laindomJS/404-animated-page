@@ -1,19 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Message from '../components/Message.astro';
+import Header from '../components/Header.astro';
 ---
 
 <Layout title="Not Found 404">
 	<main>
-		<Navbar />
-		<Message />
+		<Header />
 	</main>
 </Layout>
 
 <style>
 	main {
-		padding:0rem 8rem;
-		height: 560px;
+		max-height: 100%;
+		position: relative;
 	}
 </style>

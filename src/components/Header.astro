@@ -1,0 +1,40 @@
+---
+import Navbar from "./Navbar.astro";
+---
+
+<header class="header-container">
+  <span class="logo">COMPANY</span>
+  <Navbar />
+  <span class="open">open</span>
+</header>
+
+<style>
+header.header-container {
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 2rem 2rem;
+	justify-content: space-between;
+}
+	
+span.logo {
+	font-size: 23px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: color .2s ease;
+}
+	
+span.logo:hover {
+	color: #953ce2;
+}
+	
+span.open {
+	font-weight: 600;
+}
+
+@media screen and (min-width: 530px) {
+  span.open {
+	  display: none;
+	}
+}
+</style>
