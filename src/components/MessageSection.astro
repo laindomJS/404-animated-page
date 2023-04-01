@@ -5,7 +5,7 @@ import gon from '/assets/Gon.png';
 <section class="section-container">
   <img id="gon" src={gon} alt="a gon animated 3d shape">
   <div id="text" class="text-container">
-    <span class="error">Error 404 :C</span>
+    <span class="error">Sorry! Error 404 :C</span>
     <h2>We can't seem to find the page you are looking for.</h2>
     <button class="btn">Go to Home</button>
   </div>
@@ -52,7 +52,7 @@ import gon from '/assets/Gon.png';
 
   @media screen and (min-width: 536px) {
     section.section-container {
-      margin-top: .5rem;
+      margin-top: 0;
       flex-direction: row-reverse;
       align-items: center;
       padding: 0 3rem;
@@ -65,12 +65,12 @@ import gon from '/assets/Gon.png';
       margin: 1.2rem 0;
     }
     img#gon {
-      width: 420px;
+      width: 480px;
     }
     button.btn {
       width: 130px;
       padding: 1rem .5rem;
-      font-size: 15px;
+      font-size: 16px;
     }
   }
 </style>
@@ -82,7 +82,7 @@ import gon from '/assets/Gon.png';
 
 animate('#gon', 
 { 
-  transform: ['translateY(-3px)', 'translateY(-8px)', 'translateY(-12px)', 'translateY(-16px)', 'translateY(-3px)',]
+  transform: ['translateY(-3px)', 'translateY(-8px)', 'translateY(-12px)', 'translateY(-16px)', 'translateY(-12px)', 'translateY(-8px)', 'translateY(-3px)',]
 },
 { duration: 8, repeat: Infinity }
 )

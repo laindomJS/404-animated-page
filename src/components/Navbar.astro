@@ -1,17 +1,17 @@
-<ul class="menu-container">
-  <li>
-    <a href="#">Home</a>
-  </li>
-  <li>
-    <a href="#">About</a>
-  </li>
-  <li>
-    <a href="#">Contact</a>
-  </li>
+<ul class='menu-container'>
+	<li>
+		<a href='#'>Home</a>
+	</li>
+	<li>
+		<a href='#'>About</a>
+	</li>
+	<li>
+		<a href='#'>Contact</a>
+	</li>
 </ul>
 
 <style>
-  	ul.menu-container {
+	ul.menu-container {
 		list-style: none;
 		display: flex;
 		flex-direction: column;
@@ -24,7 +24,7 @@
 	ul.menu-container li {
 		font-weight: 600;
 		font-size: 16px;
-		transition: transform .3s ease;
+		transition: transform 0.3s ease;
 		cursor: pointer;
 	}
 
@@ -35,17 +35,17 @@
 	a {
 		text-decoration: none;
 		color: #fff;
-}
+	}
 
-@media screen and (min-width: 530px) {
-	ul.menu-container {
-		position: static;
-		top: 0;
-		flex-direction: row;
+	@media screen and (min-width: 530px) {
+		ul.menu-container {
+			position: static;
+			top: 0;
+			flex-direction: row;
+		}
+		ul.menu-container li {
+			margin: 0 1rem;
+			font-size: 20px;
+		}
 	}
-	ul.menu-container li {
-		margin: 0 1rem;
-		font-size: 20px;
-	}
-}
 </style>

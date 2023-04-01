@@ -2,7 +2,7 @@
 import Navbar from "./Navbar.astro";
 ---
 
-<header class="header-container">
+<header id="header" class="header-container">
   <span class="logo">COMPANY</span>
   <Navbar />
   <span class="open">open</span>
@@ -33,8 +33,26 @@ span.open {
 }
 
 @media screen and (min-width: 530px) {
-  span.open {
+  header.header-container {
+		padding: 2rem 6rem;
+	}
+	
+	span.open {
 	  display: none;
 	}
 }
 </style>
+
+<script>
+	import { animate, inView } from 'motion';
+
+	inView('#header', (info) => {
+		animate(info.target, 
+			{ 
+				opacity: [0.2, 0.4, 0.6, 0.8, 1],
+				y: [-12, -8, -6, -3, 0]
+			},
+			{ duration: 3 }
+		)
+	})
+</script>
